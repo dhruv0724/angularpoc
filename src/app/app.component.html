@@ -23,7 +23,7 @@
         </tr>
 
         <tr *ngFor="let detail of listOfEmployees; let i = index;" [ngStyle]="{'background-color':(!(detail.Code%2))?'green':'red'}">
-            <td>{{detail.id}}</td>
+            <td>{{detail.id+1}}</td>
             <td>{{detail.Name}}</td>
             <td>{{detail.Code}}</td>
             <td class="p-2"><button type="button" class="btn btn-dark" (click)=remove(i)>Delete</button></td>
